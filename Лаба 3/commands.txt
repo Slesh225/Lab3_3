@@ -1,0 +1,35 @@
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'MPUSH 0 data1'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'MDEL 0'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'MGET 0'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'MREPLACE 0 slesh22'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'SPUSH data1'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'SPOP'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'QPUSH data1'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'QPOP'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LSADDHEAD data1'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LSADDTAIL slesh22'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LSDELHEAD'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LSDELTAIL'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LDADDHEAD data1'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LDADDTAIL slesh22'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LDDELHEAD'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'LDDELTAIL'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'PRINT'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'HSET key2 data1'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'HDEL key2'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'HGET key2'
+
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'TINSERT 2'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'TDISPLAY'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'TISCBT'
+go run main.go node.go array.go singly_linked_list.go doubly_linked_list.go queue.go stack.go hash_table.go binary_tree.go --file data.txt --query 'TFIND 5'
+
+
+go test -coverprofile=coverage.out .
+go tool cover -html=coverage.out -o coverage.html
